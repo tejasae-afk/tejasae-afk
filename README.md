@@ -18,7 +18,6 @@
 - 🎓 **MS in Computer Engineering** @ New York University *(2024–2026)*
 - 🏢 Former **DevOps Engineer** @ ProAzure Software Solutions — built serverless microservices &amp; event-driven pipelines on AWS
 - 🔐 Built a **confidential ML inference service** using AWS Nitro Enclaves with attestation-gated key release
-- 🤖 Shipping a **RAG-based knowledge assistant** with guardrails, Redis caching, and evaluation pipelines
 - 🧪 Researching **LLM-driven hardware code generation** under Dr. Ramesh Karri (ECE Chair, NYU)
 
 ---
