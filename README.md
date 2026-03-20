@@ -69,8 +69,5 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=tejasae-afk&theme=tokyonight&hide_border=true" />
 </p>
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=tejasae-afk&theme=tokyonight&no-frame=true&column=7" />
-</p>
 
 ---
