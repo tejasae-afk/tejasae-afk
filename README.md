@@ -74,5 +74,3 @@
 </p>
 
 ---
-
-<p align="center"><i>Open to SDE and Cloud Engineering roles — let's connect!</i></p>
