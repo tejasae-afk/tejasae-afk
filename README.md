@@ -2,7 +2,6 @@
 
 <p align="center">
   <a href="https://linkedin.com/in/tejasae-afk"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:ta.attarde@gmail.com"><img src="https://img.shields.io/badge/-Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>
   <a href="https://github.com/tejasae-afk"><img src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>
   <img src="https://komarev.com/ghpvc/?username=tejasae-afk&style=flat-square&color=blue" alt="Profile Views" />
 </p>
