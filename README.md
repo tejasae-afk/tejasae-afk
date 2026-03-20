@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <strong>Software Engineer · Cloud Architect · MS CS @ NYU</strong><br/>
+  <strong>Software Engineer · Cloud Architect · MS CE @ NYU</strong><br/>
   I build scalable backend systems, cloud-native infrastructure, and secure distributed services.
 </p>
 
