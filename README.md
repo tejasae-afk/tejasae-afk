@@ -20,7 +20,6 @@
 - 🔐 Built a **confidential ML inference service** using AWS Nitro Enclaves with attestation-gated key release
 - 🤖 Shipping a **RAG-based knowledge assistant** with guardrails, Redis caching, and evaluation pipelines
 - 🧪 Researching **LLM-driven hardware code generation** under Dr. Ramesh Karri (ECE Chair, NYU)
-- 🎯 Targeting **SDE** and **Cloud/Infrastructure Engineering** roles — 2026
 
 ---
 
