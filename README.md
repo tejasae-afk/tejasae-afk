@@ -37,33 +37,26 @@
 ### 📜 Certifications
 
 <p>
-  <img src="https://img.shields.io/badge/AWS-Solutions_Architect_Professional-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" /><br/>
-  <img src="https://img.shields.io/badge/AWS-Security_Specialty-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" /><br/>
-  <img src="https://img.shields.io/badge/GCP-Professional_Cloud_Architect-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" /><br/>
-  <img src="https://img.shields.io/badge/Azure-Developer_Associate-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-Solutions_Architect_Professional-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" > <img src="https://img.shields.io/badge/AWS-Security_Specialty-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" ><br/>
+  <img src="https://img.shields.io/badge/GCP-Professional_Cloud_Architect-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" >
+  <img src="https://img.shields.io/badge/Azure-Developer_Associate-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" >
 </p>
 
 ---
 
-### 🔥 Featured Projects
+<!--### 🔥 Featured Projects
 
 | Project | Stack | Description |
 |---|---|---|
 | **Confidential ML Feature Store** | Python, FastAPI, Nitro Enclaves, KMS, DynamoDB | Hardware-isolated inference with attestation-gated key release and vsock RPC |
 | **GenAI Knowledge Assistant** | Python, FastAPI, Bedrock, Redis, Fargate | RAG pipeline with guardrails, query deduplication, and evaluation over 60+ docs |
-| **LLM4ChipDesign** | Python, GPT-4o, DeepSeek, Mistral | LLM-driven hardware code generation with compiler feedback loops — NYU Research |
-
----
+| **LLM4ChipDesign** | Python, GPT-4o, DeepSeek, Mistral | LLM-driven hardware code generation with compiler feedback loops — NYU Research | -->
 
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=tejasae-afk&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejasae-afk&layout=compact&theme=tokyonight&hide_border=true" height="170" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tejasae-afk&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=tejasae-afk&theme=dark&show_icons=true" height="170" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tejasae-afk&theme=dark&hide_border=true" height="170"/>
 </p>
 
 
