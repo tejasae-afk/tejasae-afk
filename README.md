@@ -58,8 +58,7 @@
 ### 📊 GitHub Stats
 
 <p align="center">
- [![My Awesome Stats](https://awesome-github-stats.azurewebsites.net/user-stats/tejasae-afk?cardType=level&theme=midnight-    purple&fontFamily=Alike&preferLogin=false)](https://git.io/awesome-stats-card) height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejasae-afk&layout=compact&theme=tokyonight&hide_border=true" height="170" />
+ [![My Awesome Stats](https://awesome-github-stats.azurewebsites.net/user-stats/tejasae-afk?cardType=level&theme=midnight-purple&fontFamily=Alike&preferLogin=false)](https://git.io/awesome-stats-card)/>
 </p>
 
 <p align="center">
