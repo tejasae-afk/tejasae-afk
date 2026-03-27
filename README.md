@@ -54,11 +54,10 @@
 | **LLM4ChipDesign** | Python, GPT-4o, DeepSeek, Mistral | LLM-driven hardware code generation with compiler feedback loops — NYU Research |
 
 ---
-
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=tejasae-afk&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="170" />
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=tejasae-afk&theme=dark&show_icons=true" height="170" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejasae-afk&layout=compact&theme=tokyonight&hide_border=true" height="170" />
 </p>
 
