@@ -37,9 +37,9 @@
 ### 📜 Certifications
 
 <p>
-  <img src="https://img.shields.io/badge/AWS-Solutions_Architect_Professional-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" /><br/> <img src="https://img.shields.io/badge/AWS-Security_Specialty-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" /><br/>
-  <img src="https://img.shields.io/badge/GCP-Professional_Cloud_Architect-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" /><br/>
-  <img src="https://img.shields.io/badge/Azure-Developer_Associate-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-Solutions_Architect_Professional-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" ><br/> <img src="https://img.shields.io/badge/AWS-Security_Specialty-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white" ><br/>
+  <img src="https://img.shields.io/badge/GCP-Professional_Cloud_Architect-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" ><br/>
+  <img src="https://img.shields.io/badge/Azure-Developer_Associate-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" >
 </p>
 
 ---
