@@ -44,15 +44,14 @@
 
 ---
 
-### 🔥 Featured Projects
+<!--### 🔥 Featured Projects
 
 | Project | Stack | Description |
 |---|---|---|
 | **Confidential ML Feature Store** | Python, FastAPI, Nitro Enclaves, KMS, DynamoDB | Hardware-isolated inference with attestation-gated key release and vsock RPC |
 | **GenAI Knowledge Assistant** | Python, FastAPI, Bedrock, Redis, Fargate | RAG pipeline with guardrails, query deduplication, and evaluation over 60+ docs |
-| **LLM4ChipDesign** | Python, GPT-4o, DeepSeek, Mistral | LLM-driven hardware code generation with compiler feedback loops — NYU Research |
+| **LLM4ChipDesign** | Python, GPT-4o, DeepSeek, Mistral | LLM-driven hardware code generation with compiler feedback loops — NYU Research | -->
 
----
 ### 📊 GitHub Stats
 
 <p align="center">
