@@ -55,8 +55,6 @@
 
 ---
 
-[![My Awesome Stats](https://awesome-github-stats.azurewebsites.net/user-stats/tejasae-afk?cardType=level&theme=midnight-purple&fontFamily=Alike&preferLogin=false)](https://git.io/awesome-stats-card)
-
 ### 📊 GitHub Stats
 
 <p align="center">
