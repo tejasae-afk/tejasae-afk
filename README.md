@@ -41,9 +41,11 @@
   <img src="https://img.shields.io/badge/GCP-Professional_Cloud_Architect-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" >
   <img src="https://img.shields.io/badge/Azure-Developer_Associate-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" >
 </p>
+
+
 ---
 
-### 🔥 Featured Projects
+<!--### 🔥 Featured Projects
 
 | Project | Stack | Description |
 |---|---|---|
@@ -52,6 +54,7 @@
 | **LLM4ChipDesign** | Python, GPT-4o, DeepSeek, Mistral | LLM-driven hardware code generation with compiler feedback loops — NYU Research |
 
 ---
+-->
 
 ### 📊 GitHub Stats
 
