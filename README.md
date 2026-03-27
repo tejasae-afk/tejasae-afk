@@ -61,9 +61,5 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=tejasae-afk&theme=dark&hide_border=true" height="170"/>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tejasae-afk&theme=dark&hide_border=true" />
-</p>
-
 
 ---
