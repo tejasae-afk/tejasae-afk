@@ -16,7 +16,7 @@
 ### 🧑‍💻 About Me
 
 - 🎓 **MS in Computer Engineering** @ New York University *(2024–2026)*
-- 🏢 Former **DevOps Engineer** @ ProAzure Software Solutions — built serverless microservices &amp; event-driven pipelines on AWS
+- 🏢 Former **DevOps Engineer** @ ProAzure Software Solutions — built serverless microservices & event-driven pipelines on AWS
 - 🔐 Built a **confidential ML inference service** using AWS Nitro Enclaves with attestation-gated key release
 - 🧪 Researching **LLM-driven hardware code generation** under Dr. Ramesh Karri (ECE Chair, NYU)
 
@@ -29,7 +29,7 @@
 | **Languages** | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![Java](https://img.shields.io/badge/-Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white) |
 | **Cloud** | ![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white) ![GCP](https://img.shields.io/badge/-GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white) ![Azure](https://img.shields.io/badge/-Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white) |
 | **Infrastructure** | ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Terraform](https://img.shields.io/badge/-Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white) ![Jenkins](https://img.shields.io/badge/-Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white) |
-| **Backend &amp; Data** | ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![DynamoDB](https://img.shields.io/badge/-DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white) |
+| **Backend & Data** | ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![DynamoDB](https://img.shields.io/badge/-DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white) |
 | **Security** | IAM · KMS · Nitro Enclaves · Cognito · Secrets Manager · JWT · Service Accounts |
 
 ---
@@ -42,25 +42,35 @@
   <img src="https://img.shields.io/badge/Azure-Developer_Associate-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" >
 </p>
 
-
 ---
 
-<!--### 🔥 Featured Projects
+### 🔥 Featured Projects
 
 | Project | Stack | Description |
 |---|---|---|
-| **Confidential ML Feature Store** | Python, FastAPI, Nitro Enclaves, KMS, DynamoDB | Hardware-isolated inference with attestation-gated key release and vsock RPC |
-| **GenAI Knowledge Assistant** | Python, FastAPI, Bedrock, Redis, Fargate | RAG pipeline with guardrails, query deduplication, and evaluation over 60+ docs |
-| **LLM4ChipDesign** | Python, GPT-4o, DeepSeek, Mistral | LLM-driven hardware code generation with compiler feedback loops — NYU Research |
+| [**Confidential ML Feature Store**](https://github.com/tejasae-afk/confidential-ml-feature-store) | Python · FastAPI · Nitro Enclaves · KMS · DynamoDB | Hardware-isolated multi-tenant inference with attestation-gated key release and vsock RPC. Secrets never leave the enclave. |
+| [**Multi-Cloud Kubernetes Platform**](https://github.com/tejasae-afk/Multi-Cloud-Kubernetes-Platform-AKS-GKE) | Kubernetes · GKE · AKS · Terraform · Helm | Production-grade platform spanning GCP and Azure — unified ingress, autoscaling, RBAC, and GitOps-ready manifests. |
+| [**LLMPirate**](https://github.com/tejasae-afk/LLMPirate) | Python · LLM · Prompt Engineering | Research into adversarial LLM evaluation — jailbreak robustness testing and safety-boundary analysis at scale. |
 
 ---
--->
+
+### 🤝 Open Source Contributions
+
+Merged patches in production codebases used by thousands of developers:
+
+| Repository | Stars | Contribution | PR |
+|---|---|---|---|
+| **awslabs/amazon-neptune-tools** | ★ 460 | Fixed silent data corruption — loop index never incremented in multi-edge bulk load, causing all edges to inherit index-0 values | [#403](https://github.com/awslabs/amazon-neptune-tools/pull/403) ✅ |
+| **awslabs/amazon-neptune-tools** | ★ 460 | Fixed `raise 'string'` (invalid Python 3 syntax) in provisioning handler — would crash at runtime on every invocation | [#401](https://github.com/awslabs/amazon-neptune-tools/pull/401) ✅ |
+| **openrocket/openrocket** | ★ 2.1k | Fixed unclosed `BufferedWriter` resource leak in RASAero flight-data exporter | [#3092](https://github.com/openrocket/openrocket/pull/3092) ✅ |
+| **MCreator/MCreator** | ★ 1.1k | Fixed `FileInputStream` leak in NBT editor — stream not closed on exception path | [#6201](https://github.com/MCreator/MCreator/pull/6201) ✅ |
+
+---
 
 ### 📊 GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=tejasae-afk&theme=dark&hide_border=true" height="170"/>
 </p>
-
 
 ---
