@@ -61,10 +61,10 @@ Merged patches in production codebases used by thousands of developers:
 | Repository | Stars | Contribution | PR |
 |---|---|---|---|
 | **langchain-ai/langchain** | ★ 132k | Fixed unbounded network hang in CI workflow — added HTTP timeout to `get_min_versions.py` so stuck requests no longer block the entire runner | [#35851](https://github.com/langchain-ai/langchain/pull/35851) ✅ |
-| **openrocket/openrocket** | ★ 2.1k | Fixed unclosed `BufferedWriter` resource leak in RASAero flight-data exporter | [#3092](https://github.com/openrocket/openrocket/pull/3092) ✅ |
-| **MCreator/MCreator** | ★ 1.1k | Fixed `FileInputStream` leak in NBT editor — stream not closed on exception path | [#6201](https://github.com/MCreator/MCreator/pull/6201) ✅ |
-| **awslabs/amazon-neptune-tools** | ★ 460 | Fixed silent data corruption — loop index never incremented in multi-edge bulk load, causing all edges to inherit index-0 values | [#403](https://github.com/awslabs/amazon-neptune-tools/pull/403) ✅ |
-| **awslabs/amazon-neptune-tools** | ★ 460 | Fixed `raise 'string'` (invalid Python 3 syntax) in provisioning handler — would crash at runtime on every invocation | [#401](https://github.com/awslabs/amazon-neptune-tools/pull/401) ✅ |
+| **run-llama/llama_index** | ★ 48k | Fixed mutable default argument in LanceDB managed index `__init__` — shared list across calls causing silent state leaks | [#20998](https://github.com/run-llama/llama_index/pull/20998) ✅ |
+| **jxxghp/MoviePilot** | ★ 10k | Fixed indefinite worker hang in Alipan storage module — added HTTP request timeout to prevent network calls from blocking indefinitely | [#5574](https://github.com/jxxghp/MoviePilot/pull/5574) ✅ |
+| **samuelclay/NewsBlur** | ★ 7.4k | Fixed mutable default argument in `canonical_string()` S3 utility — shared state across calls could corrupt request signing | [#2086](https://github.com/samuelclay/NewsBlur/pull/2086) ✅ |
+| **FasterXML/jackson-databind** | ★ 3.7k | Fixed implicit platform encoding in JSON export — made `utf-8` explicit so output is consistent across environments | [#5829](https://github.com/FasterXML/jackson-databind/pull/5829) ✅ |
 
 ---
 
