@@ -69,6 +69,8 @@ Merged patches in production codebases used by thousands of developers:
 | **openrocket/openrocket** | ★ 2.6k | Fixed unclosed `BufferedWriter` in RASAero flight-data exporter — stream could leak on error exit path | [#3092](https://github.com/openrocket/openrocket/pull/3092) ✅ |
 | **mll-lab-nu/RAGEN** | ★ 2.5k | Fixed mutable default argument in `load_config()` — shared list across calls causing silent state leaks in environment config | [#164](https://github.com/mll-lab-nu/RAGEN/pull/164) ✅ |
 
+*...and [more](https://github.com/tejasae-afk?tab=overview) across apache/james-project, deephaven/deephaven-core, awslabs/amazon-neptune-tools, and others.*
+
 ---
 
 ### 📊 GitHub Stats
