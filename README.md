@@ -65,6 +65,9 @@ Merged patches in production codebases used by thousands of developers:
 | **jxxghp/MoviePilot** | ★ 10k | Fixed indefinite worker hang in Alipan storage module — added HTTP request timeout to prevent network calls from blocking indefinitely | [#5574](https://github.com/jxxghp/MoviePilot/pull/5574) ✅ |
 | **samuelclay/NewsBlur** | ★ 7.4k | Fixed mutable default argument in `canonical_string()` S3 utility — shared state across calls could corrupt request signing | [#2086](https://github.com/samuelclay/NewsBlur/pull/2086) ✅ |
 | **FasterXML/jackson-databind** | ★ 3.7k | Fixed implicit platform encoding in JSON export — made `utf-8` explicit so output is consistent across environments | [#5829](https://github.com/FasterXML/jackson-databind/pull/5829) ✅ |
+| **networknt/light-4j** | ★ 3.6k | Fixed `BufferedReader` resource leak in logging handler — moved allocation into try-with-resources so cleanup happens on every exit path | [#2728](https://github.com/networknt/light-4j/pull/2728) ✅ |
+| **openrocket/openrocket** | ★ 2.6k | Fixed unclosed `BufferedWriter` in RASAero flight-data exporter — stream could leak on error exit path | [#3092](https://github.com/openrocket/openrocket/pull/3092) ✅ |
+| **mll-lab-nu/RAGEN** | ★ 2.5k | Fixed mutable default argument in `load_config()` — shared list across calls causing silent state leaks in environment config | [#164](https://github.com/mll-lab-nu/RAGEN/pull/164) ✅ |
 
 ---
 
