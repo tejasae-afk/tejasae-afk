@@ -49,7 +49,6 @@
 |---|---|---|
 | [**Confidential ML Feature Store**](https://github.com/tejasae-afk/confidential-ml-feature-store) | Python · FastAPI · Nitro Enclaves · KMS · DynamoDB | Hardware-isolated multi-tenant inference with attestation-gated key release and vsock RPC. Secrets never leave the enclave. |
 | [**Multi-Cloud Kubernetes Platform**](https://github.com/tejasae-afk/Multi-Cloud-Kubernetes-Platform-AKS-GKE) | Kubernetes · GKE · AKS · Terraform · Helm | Production-grade platform spanning GCP and Azure — unified ingress, autoscaling, RBAC, and GitOps-ready manifests. |
-| [**LLMPirate**](https://github.com/tejasae-afk/LLMPirate) | Python · LLM · Prompt Engineering | Research into adversarial LLM evaluation — jailbreak robustness testing and safety-boundary analysis at scale. |
 
 ---
 
