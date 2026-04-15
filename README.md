@@ -109,15 +109,25 @@ Merged patches in production codebases used by thousands of developers:
 
 Merged patches across **18 production codebases** (★ 330k+ combined):
 
-- 🔒 **[langchain-ai/langchain](https://github.com/langchain-ai/langchain/pull/35851)** ★132k — eliminated CI deadlock from unbounded HTTP calls in runner workflow
-- 🔒 **[run-llama/llama_index](https://github.com/run-llama/llama_index/pull/20998)** ★48k — patched data-corruption hazard from mutable default in LanceDB index
-- 🔒 **[jeecgboot/JeecgBoot](https://github.com/jeecgboot/JeecgBoot/pull/9548)** ★46k — closed `InputStream` leak in Tika document parser
-- 🔒 **[jxxghp/MoviePilot](https://github.com/jxxghp/MoviePilot/pull/5574)** ★10k — fixed thread hang from unbounded Alipan HTTP calls
-- 🔒 **[samuelclay/NewsBlur](https://github.com/samuelclay/NewsBlur/pull/2086)** ★7.4k — fixed mutable default corrupting S3 request signatures
-- 🔒 **[FasterXML/jackson-databind](https://github.com/FasterXML/jackson-databind/pull/5829)** ★3.7k — hardened JSON export against platform encoding drift
-- 🔒 **[networknt/light-4j](https://github.com/networknt/light-4j/pull/2728)** ★3.6k — sealed `BufferedReader` fd leak in logging handler
-- 🔒 **[openrocket/openrocket](https://github.com/openrocket/openrocket/pull/3092)** ★2.6k — closed `BufferedWriter` leak in RASAero flight-data exporter
-- 🔒 **[mll-lab-nu/RAGEN](https://github.com/mll-lab-nu/RAGEN/pull/164)** ★2.5k — fixed config state bleed across RL training runs
+- 🔒 **[langchain-ai/langchain](https://github.com/langchain-ai/langchain/pull/35851)** ★132k `#35851` — eliminated CI deadlock from unbounded HTTP calls in runner workflow
+- 🔒 **[run-llama/llama_index](https://github.com/run-llama/llama_index/pull/20998)** ★48k `#20998` — patched data-corruption hazard from mutable default in LanceDB index
+- 🔒 **[jeecgboot/JeecgBoot](https://github.com/jeecgboot/JeecgBoot/pull/9548)** ★46k `#9548` — closed `InputStream` leak in Tika document parser
+- 🔒 **[jxxghp/MoviePilot](https://github.com/jxxghp/MoviePilot/pull/5574)** ★10k `#5574` — fixed thread hang from unbounded Alipan HTTP calls
+- 🔒 **[samuelclay/NewsBlur](https://github.com/samuelclay/NewsBlur/pull/2086)** ★7.4k `#2086` — fixed mutable default corrupting S3 request signatures
+- 🔒 **[FasterXML/jackson-databind](https://github.com/FasterXML/jackson-databind/pull/5829)** ★3.7k `#5829` — hardened JSON export against platform encoding drift
+- 🔒 **[networknt/light-4j](https://github.com/networknt/light-4j/pull/2728)** ★3.6k `#2728` — sealed `BufferedReader` fd leak in logging handler
+- 🔒 **[openrocket/openrocket](https://github.com/openrocket/openrocket/pull/3092)** ★2.6k `#3092` — closed `BufferedWriter` leak in RASAero flight-data exporter
+- 🔒 **[mll-lab-nu/RAGEN](https://github.com/mll-lab-nu/RAGEN/pull/164)** ★2.5k `#164` — fixed config state bleed across RL training runs
+- 🐛 **[MCreator/MCreator](https://github.com/MCreator/MCreator/pull/6201)** ★1.1k `#6201` — closed `FileInputStream` leak in mod-pack loader on error exit path
+- 🐛 **[apache/james-project](https://github.com/apache/james-project/pull/2981)** ★1k `#2981` — sealed `BufferedReader` leak in SMTP protocol line handler
+- 🐛 **[getrebuild/rebuild](https://github.com/getrebuild/rebuild/pull/1009)** ★988 `#1009` — closed `Scanner` in schema generator; eliminated fd leak on normal and error exit
+- 🐛 **[deephaven/deephaven-core](https://github.com/deephaven/deephaven-core/pull/7854)** ★346 `#7854` — preserved exception traceback in `open_table` so errors aren't silently swallowed
+- 🐛 **[awslabs/amazon-neptune-tools](https://github.com/awslabs/amazon-neptune-tools/pull/401)** ★312 `#401` — kept traceback in Lambda bulk handler; bare `except` was hiding real failures
+- 🐛 **[awslabs/amazon-neptune-tools](https://github.com/awslabs/amazon-neptune-tools/pull/403)** ★312 `#403` — fixed off-by-one in multi-edge CSV loop causing every other edge to be dropped
+- 🐛 **[zapek/Xeres](https://github.com/zapek/Xeres/pull/418)** ★202 `#418` — hardened bot message serialisation with explicit UTF-8 charset
+- 🐛 **[luna-rs/luna](https://github.com/luna-rs/luna/pull/496)** ★170 `#496` — anchored `weakenBy` skill reduction to static level preventing negative stat overflow
+- 🐛 **[jpos/jPOS-EE](https://github.com/jpos/jPOS-EE/pull/356)** ★121 `#356` — fixed `parseDateTime` dropping time component and tightened `amountSign` validation rejecting `.`
+- 🐛 **[equinor/neqsim](https://github.com/equinor/neqsim/pull/2014)** ★109 `#2014` — removed duplicate `getPhase()` call in viscosity denominator causing redundant phase recomputation
 
 ---
 
