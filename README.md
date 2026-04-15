@@ -55,7 +55,7 @@
 
 ### 🤝 Open Source Contributions
 
-Merged patches across **18 production codebases** (★ 330k+ combined):
+Merged patches across production codebases used by thousands of developers :
 
 - 🔒 **[langchain-ai/langchain](https://github.com/langchain-ai/langchain/pull/35851)** ★132k `#35851` — eliminated CI deadlock from unbounded HTTP calls in runner workflow
 - 🔒 **[run-llama/llama_index](https://github.com/run-llama/llama_index/pull/20998)** ★48k `#20998` — patched data-corruption hazard from mutable default in LanceDB index
@@ -64,7 +64,7 @@ Merged patches across **18 production codebases** (★ 330k+ combined):
 - 🔒 **[samuelclay/NewsBlur](https://github.com/samuelclay/NewsBlur/pull/2086)** ★7.4k `#2086` — fixed mutable default corrupting S3 request signatures
 - 🔒 **[FasterXML/jackson-databind](https://github.com/FasterXML/jackson-databind/pull/5829)** ★3.7k `#5829` — hardened JSON export against platform encoding drift
 
-*...and [12 more](https://github.com/tejasae-afk?tab=overview) across networknt/light-4j, openrocket/openrocket, MCreator/MCreator, apache/james-project, and others.*
+*...and [more](https://github.com/tejasae-afk?tab=overview) across networknt/light-4j, openrocket/openrocket, MCreator/MCreator, apache/james-project, and others.*
 
 ---
 
