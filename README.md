@@ -3,6 +3,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/tejasae/"><img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
   <img src="https://komarev.com/ghpvc/?username=tejasae-afk&style=flat-square&color=blue" alt="Profile Views" />
+  <img src="https://img.shields.io/badge/Open%20Source-Contributor-06D6A0?style=flat-square&logo=github&logoColor=black" />
 </p>
 
 <p align="center">
@@ -73,8 +74,39 @@ Merged patches in production codebases used by thousands of developers:
 
 ### 📊 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tejasae-afk&theme=dark&hide_border=true" height="170"/>
-</p>
+<div align="center">
+
+<table style="border-collapse: collapse;">
+<tr>
+<td align="center" style="padding: 8px;">
+
+<img src="https://github-readme-stats.vercel.app/api?username=tejasae-afk&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" width="360" />
+
+</td>
+<td align="center" style="padding: 8px;">
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejasae-afk&layout=compact&theme=tokyonight&hide_border=true" width="360" />
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<table style="border-collapse: collapse;">
+<tr>
+
+<td align="center" style="padding: 8px;">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=tejasae-afk&theme=dark&hide_border=true" height="170"/>
+</td>
+
+<td align="center" style="padding: 8px;">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=tejasae-afk&theme=react-dark&hide_border=true&area=true" width="450" />
+</td>
+
+</tr>
+</table>
+
+</div>
 
 ---
