@@ -55,58 +55,6 @@
 
 ### 🤝 Open Source Contributions
 
-Merged patches in production codebases used by thousands of developers:
-
-| Repository | Stars | Contribution | PR |
-|---|---|---|---|
-| **langchain-ai/langchain** | ★ 132k | Eliminated a silent CI deadlock — unguarded HTTP calls in `get_min_versions.py` could stall the entire GitHub Actions runner indefinitely; added a request timeout to bound worst-case latency | [#35851](https://github.com/langchain-ai/langchain/pull/35851) ✅ |
-| **run-llama/llama_index** | ★ 48k | Patched a subtle data-corruption hazard in the LanceDB managed index — mutable default argument in `__init__` caused list state to bleed across unrelated instances | [#20998](https://github.com/run-llama/llama_index/pull/20998) ✅ |
-| **jeecgboot/JeecgBoot** | ★ 46k | Closed a file-descriptor leak in the Tika document parser — `InputStream` was allocated before the `try` block, leaving it open on any exception path; moved into try-with-resources | [#9548](https://github.com/jeecgboot/JeecgBoot/pull/9548) ✅ |
-| **jxxghp/MoviePilot** | ★ 10k | Fixed a worker thread that could hang forever — Alipan storage module made unbounded HTTP calls with no timeout, freezing the thread pool under slow or unreachable endpoints | [#5574](https://github.com/jxxghp/MoviePilot/pull/5574) ✅ |
-| **samuelclay/NewsBlur** | ★ 7.4k | Fixed a mutable default argument in the S3 `canonical_string()` signing utility — shared list state across calls risked silently corrupting AWS request signatures | [#2086](https://github.com/samuelclay/NewsBlur/pull/2086) ✅ |
-| **FasterXML/jackson-databind** | ★ 3.7k | Hardened JSON export against platform encoding drift — implicit charset in `export_to_json` produced garbled output on non-UTF-8 JVMs; made UTF-8 explicit | [#5829](https://github.com/FasterXML/jackson-databind/pull/5829) ✅ |
-| **networknt/light-4j** | ★ 3.6k | Sealed a `BufferedReader` leak in the logging handler — resource was opened outside try-with-resources so any exception on the read path left the descriptor open | [#2728](https://github.com/networknt/light-4j/pull/2728) ✅ |
-| **openrocket/openrocket** | ★ 2.6k | Fixed `BufferedWriter` leak in the RASAero flight-data exporter — stream was never closed on error exit paths, risking data truncation and fd exhaustion in long sessions | [#3092](https://github.com/openrocket/openrocket/pull/3092) ✅ |
-| **mll-lab-nu/RAGEN** | ★ 2.5k | Fixed mutable default in `load_config()` — shared list persisted across invocations, causing environment configs to accumulate entries silently across RL training runs | [#164](https://github.com/mll-lab-nu/RAGEN/pull/164) ✅ |
-
-*...and [more](https://github.com/tejasae-afk?tab=overview) across apache/james-project, deephaven/deephaven-core, awslabs/amazon-neptune-tools, and others.*
-
----
-
-#### Option A — compact table with expandable details
-
-| Repository | Stars | PR |
-|---|---:|---|
-| <details><summary><b>langchain-ai/langchain</b></summary>Eliminated a silent CI deadlock — unguarded HTTP calls could stall the entire GitHub Actions runner indefinitely</details> | ★ 132k | [#35851](https://github.com/langchain-ai/langchain/pull/35851) ✅ |
-| <details><summary><b>run-llama/llama_index</b></summary>Patched a data-corruption hazard — mutable default in `__init__` caused list state to bleed across unrelated instances</details> | ★ 48k | [#20998](https://github.com/run-llama/llama_index/pull/20998) ✅ |
-| <details><summary><b>jeecgboot/JeecgBoot</b></summary>Closed a file-descriptor leak in the Tika document parser — `InputStream` left open on any exception path</details> | ★ 46k | [#9548](https://github.com/jeecgboot/JeecgBoot/pull/9548) ✅ |
-| <details><summary><b>jxxghp/MoviePilot</b></summary>Fixed a worker thread that could hang forever — unbounded HTTP calls with no timeout froze the thread pool</details> | ★ 10k | [#5574](https://github.com/jxxghp/MoviePilot/pull/5574) ✅ |
-| <details><summary><b>samuelclay/NewsBlur</b></summary>Fixed mutable default in S3 signing utility — shared state across calls could silently corrupt AWS request signatures</details> | ★ 7.4k | [#2086](https://github.com/samuelclay/NewsBlur/pull/2086) ✅ |
-| <details><summary><b>FasterXML/jackson-databind</b></summary>Hardened JSON export against platform encoding drift — implicit charset produced garbled output on non-UTF-8 JVMs</details> | ★ 3.7k | [#5829](https://github.com/FasterXML/jackson-databind/pull/5829) ✅ |
-| <details><summary><b>networknt/light-4j</b></summary>Sealed a `BufferedReader` leak — resource opened outside try-with-resources left fd open on any exception</details> | ★ 3.6k | [#2728](https://github.com/networknt/light-4j/pull/2728) ✅ |
-| <details><summary><b>openrocket/openrocket</b></summary>Fixed `BufferedWriter` leak in RASAero exporter — stream never closed on error paths, risking data truncation</details> | ★ 2.6k | [#3092](https://github.com/openrocket/openrocket/pull/3092) ✅ |
-| <details><summary><b>mll-lab-nu/RAGEN</b></summary>Fixed mutable default in `load_config()` — shared list accumulated entries silently across RL training runs</details> | ★ 2.5k | [#164](https://github.com/mll-lab-nu/RAGEN/pull/164) ✅ |
-
----
-
-#### Option B — compact one-liner table
-
-| Repository | Stars | Fix | PR |
-|---|---:|---|---|
-| **langchain-ai/langchain** | ★ 132k | CI deadlock: bounded unbounded HTTP calls in runner workflow | [#35851](https://github.com/langchain-ai/langchain/pull/35851) ✅ |
-| **run-llama/llama_index** | ★ 48k | Data corruption: fixed mutable default in LanceDB index `__init__` | [#20998](https://github.com/run-llama/llama_index/pull/20998) ✅ |
-| **jeecgboot/JeecgBoot** | ★ 46k | Resource leak: closed `InputStream` on all paths in Tika parser | [#9548](https://github.com/jeecgboot/JeecgBoot/pull/9548) ✅ |
-| **jxxghp/MoviePilot** | ★ 10k | Thread hang: added timeout to Alipan HTTP calls | [#5574](https://github.com/jxxghp/MoviePilot/pull/5574) ✅ |
-| **samuelclay/NewsBlur** | ★ 7.4k | Silent corruption: fixed mutable default in S3 signing utility | [#2086](https://github.com/samuelclay/NewsBlur/pull/2086) ✅ |
-| **FasterXML/jackson-databind** | ★ 3.7k | Encoding drift: hardened JSON export with explicit UTF-8 | [#5829](https://github.com/FasterXML/jackson-databind/pull/5829) ✅ |
-| **networknt/light-4j** | ★ 3.6k | Resource leak: sealed `BufferedReader` in try-with-resources | [#2728](https://github.com/networknt/light-4j/pull/2728) ✅ |
-| **openrocket/openrocket** | ★ 2.6k | Resource leak: closed `BufferedWriter` on all exit paths | [#3092](https://github.com/openrocket/openrocket/pull/3092) ✅ |
-| **mll-lab-nu/RAGEN** | ★ 2.5k | Silent state bleed: fixed mutable default in `load_config()` | [#164](https://github.com/mll-lab-nu/RAGEN/pull/164) ✅ |
-
----
-
-#### Option C — bulleted list
-
 Merged patches across **18 production codebases** (★ 330k+ combined):
 
 - 🔒 **[langchain-ai/langchain](https://github.com/langchain-ai/langchain/pull/35851)** ★132k `#35851` — eliminated CI deadlock from unbounded HTTP calls in runner workflow
