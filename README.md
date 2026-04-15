@@ -30,7 +30,7 @@ Merged patches across production codebases used by thousands of developers :
 - 🔒 **[run-llama/llama_index](https://github.com/run-llama/llama_index/pull/20998)** ★48k `#20998` — patched data-corruption hazard from mutable default in LanceDB index
 - 🔒 **[jeecgboot/JeecgBoot](https://github.com/jeecgboot/JeecgBoot/pull/9548)** ★46k `#9548` — closed `InputStream` leak in Tika document parser
 - 🔒 **[jxxghp/MoviePilot](https://github.com/jxxghp/MoviePilot/pull/5574)** ★10k `#5574` — fixed thread hang from unbounded Alipan HTTP calls
-- 🔒 **[samuelclay/NewsBlur](https://github.com/samuelclay/NewsBlur/pull/2086)** ★7.4k `#2086` — fixed mutable default corrupting S3 request signatures
+- 🔒 **[samuelclay/NewsBlur](https://github.com/samuelclay/NewsBlur/pull/2086)** ★7.4k `#2086` — fixed default corrupting S3 request signatures
 - 🔒 **[FasterXML/jackson-databind](https://github.com/FasterXML/jackson-databind/pull/5829)** ★3.7k `#5829` — hardened JSON export against platform encoding drift
 
 *...and [more](https://github.com/tejasae-afk?tab=overview) across networknt/light-4j, openrocket/openrocket, MCreator/MCreator, apache/james-project, and others.*
