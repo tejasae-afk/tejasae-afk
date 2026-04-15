@@ -80,12 +80,12 @@ Merged patches in production codebases used by thousands of developers:
 <tr>
 <td align="center" style="padding: 8px;">
 
-<img src="https://github-readme-stats.vercel.app/api?username=tejasae-afk&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" width="360" />
+<img src="https://github-readme-stats.vercel.app/api?username=tejasae-afk&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" width="380" />
 
 </td>
 <td align="center" style="padding: 8px;">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejasae-afk&layout=compact&theme=tokyonight&hide_border=true" width="360" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejasae-afk&layout=compact&theme=tokyonight&hide_border=true" width="290" />
 
 </td>
 </tr>
