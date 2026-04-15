@@ -22,6 +22,21 @@
 
 ---
 
+### 🤝 Open Source Contributions
+
+Merged patches across production codebases used by thousands of developers :
+
+- 🔒 **[langchain-ai/langchain](https://github.com/langchain-ai/langchain/pull/35851)** ★132k `#35851` — eliminated CI deadlock from unbounded HTTP calls in runner workflow
+- 🔒 **[run-llama/llama_index](https://github.com/run-llama/llama_index/pull/20998)** ★48k `#20998` — patched data-corruption hazard from mutable default in LanceDB index
+- 🔒 **[jeecgboot/JeecgBoot](https://github.com/jeecgboot/JeecgBoot/pull/9548)** ★46k `#9548` — closed `InputStream` leak in Tika document parser
+- 🔒 **[jxxghp/MoviePilot](https://github.com/jxxghp/MoviePilot/pull/5574)** ★10k `#5574` — fixed thread hang from unbounded Alipan HTTP calls
+- 🔒 **[samuelclay/NewsBlur](https://github.com/samuelclay/NewsBlur/pull/2086)** ★7.4k `#2086` — fixed mutable default corrupting S3 request signatures
+- 🔒 **[FasterXML/jackson-databind](https://github.com/FasterXML/jackson-databind/pull/5829)** ★3.7k `#5829` — hardened JSON export against platform encoding drift
+
+*...and [more](https://github.com/tejasae-afk?tab=overview) across networknt/light-4j, openrocket/openrocket, MCreator/MCreator, apache/james-project, and others.*
+
+---
+
 ### 🛠️ Tech Stack
 
 | Domain | Technologies |
@@ -50,21 +65,6 @@
 |---|---|---|
 | [**Confidential ML Feature Store**](https://github.com/tejasae-afk/confidential-ml-feature-store) | Python · FastAPI · Nitro Enclaves · KMS · DynamoDB | Hardware-isolated multi-tenant inference with attestation-gated key release and vsock RPC. Secrets never leave the enclave. |
 | [**Multi-Cloud Kubernetes Platform**](https://github.com/tejasae-afk/Multi-Cloud-Kubernetes-Platform-AKS-GKE) | Kubernetes · GKE · AKS · Terraform · Helm | Production-grade platform spanning GCP and Azure — unified ingress, autoscaling, RBAC, and GitOps-ready manifests. |
-
----
-
-### 🤝 Open Source Contributions
-
-Merged patches across production codebases used by thousands of developers :
-
-- 🔒 **[langchain-ai/langchain](https://github.com/langchain-ai/langchain/pull/35851)** ★132k `#35851` — eliminated CI deadlock from unbounded HTTP calls in runner workflow
-- 🔒 **[run-llama/llama_index](https://github.com/run-llama/llama_index/pull/20998)** ★48k `#20998` — patched data-corruption hazard from mutable default in LanceDB index
-- 🔒 **[jeecgboot/JeecgBoot](https://github.com/jeecgboot/JeecgBoot/pull/9548)** ★46k `#9548` — closed `InputStream` leak in Tika document parser
-- 🔒 **[jxxghp/MoviePilot](https://github.com/jxxghp/MoviePilot/pull/5574)** ★10k `#5574` — fixed thread hang from unbounded Alipan HTTP calls
-- 🔒 **[samuelclay/NewsBlur](https://github.com/samuelclay/NewsBlur/pull/2086)** ★7.4k `#2086` — fixed mutable default corrupting S3 request signatures
-- 🔒 **[FasterXML/jackson-databind](https://github.com/FasterXML/jackson-databind/pull/5829)** ★3.7k `#5829` — hardened JSON export against platform encoding drift
-
-*...and [more](https://github.com/tejasae-afk?tab=overview) across networknt/light-4j, openrocket/openrocket, MCreator/MCreator, apache/james-project, and others.*
 
 ---
 
