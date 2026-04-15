@@ -61,6 +61,7 @@ Merged patches in production codebases used by thousands of developers:
 |---|---|---|---|
 | **langchain-ai/langchain** | ★ 132k | Fixed unbounded network hang in CI workflow — added HTTP timeout to `get_min_versions.py` so stuck requests no longer block the entire runner | [#35851](https://github.com/langchain-ai/langchain/pull/35851) ✅ |
 | **run-llama/llama_index** | ★ 48k | Fixed mutable default argument in LanceDB managed index `__init__` — shared list across calls causing silent state leaks | [#20998](https://github.com/run-llama/llama_index/pull/20998) ✅ |
+| **jeecgboot/JeecgBoot** | ★ 46k | Fixed `InputStream` resource leak in Tika document parser — moved allocation into try-with-resources so cleanup happens on every exit path | [#9548](https://github.com/jeecgboot/JeecgBoot/pull/9548) ✅ |
 | **jxxghp/MoviePilot** | ★ 10k | Fixed indefinite worker hang in Alipan storage module — added HTTP request timeout to prevent network calls from blocking indefinitely | [#5574](https://github.com/jxxghp/MoviePilot/pull/5574) ✅ |
 | **samuelclay/NewsBlur** | ★ 7.4k | Fixed mutable default argument in `canonical_string()` S3 utility — shared state across calls could corrupt request signing | [#2086](https://github.com/samuelclay/NewsBlur/pull/2086) ✅ |
 | **FasterXML/jackson-databind** | ★ 3.7k | Fixed implicit platform encoding in JSON export — made `utf-8` explicit so output is consistent across environments | [#5829](https://github.com/FasterXML/jackson-databind/pull/5829) ✅ |
