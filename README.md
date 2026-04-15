@@ -59,15 +59,15 @@ Merged patches in production codebases used by thousands of developers:
 
 | Repository | Stars | Contribution | PR |
 |---|---|---|---|
-| **langchain-ai/langchain** | ★ 132k | Fixed unbounded network hang in CI workflow — added HTTP timeout to `get_min_versions.py` so stuck requests no longer block the entire runner | [#35851](https://github.com/langchain-ai/langchain/pull/35851) ✅ |
-| **run-llama/llama_index** | ★ 48k | Fixed mutable default argument in LanceDB managed index `__init__` — shared list across calls causing silent state leaks | [#20998](https://github.com/run-llama/llama_index/pull/20998) ✅ |
-| **jeecgboot/JeecgBoot** | ★ 46k | Fixed `InputStream` resource leak in Tika document parser — moved allocation into try-with-resources so cleanup happens on every exit path | [#9548](https://github.com/jeecgboot/JeecgBoot/pull/9548) ✅ |
-| **jxxghp/MoviePilot** | ★ 10k | Fixed indefinite worker hang in Alipan storage module — added HTTP request timeout to prevent network calls from blocking indefinitely | [#5574](https://github.com/jxxghp/MoviePilot/pull/5574) ✅ |
-| **samuelclay/NewsBlur** | ★ 7.4k | Fixed mutable default argument in `canonical_string()` S3 utility — shared state across calls could corrupt request signing | [#2086](https://github.com/samuelclay/NewsBlur/pull/2086) ✅ |
-| **FasterXML/jackson-databind** | ★ 3.7k | Fixed implicit platform encoding in JSON export — made `utf-8` explicit so output is consistent across environments | [#5829](https://github.com/FasterXML/jackson-databind/pull/5829) ✅ |
-| **networknt/light-4j** | ★ 3.6k | Fixed `BufferedReader` resource leak in logging handler — moved allocation into try-with-resources so cleanup happens on every exit path | [#2728](https://github.com/networknt/light-4j/pull/2728) ✅ |
-| **openrocket/openrocket** | ★ 2.6k | Fixed unclosed `BufferedWriter` in RASAero flight-data exporter — stream could leak on error exit path | [#3092](https://github.com/openrocket/openrocket/pull/3092) ✅ |
-| **mll-lab-nu/RAGEN** | ★ 2.5k | Fixed mutable default argument in `load_config()` — shared list across calls causing silent state leaks in environment config | [#164](https://github.com/mll-lab-nu/RAGEN/pull/164) ✅ |
+| **langchain-ai/langchain** | ★ 132k | Eliminated a silent CI deadlock — unguarded HTTP calls in `get_min_versions.py` could stall the entire GitHub Actions runner indefinitely; added a request timeout to bound worst-case latency | [#35851](https://github.com/langchain-ai/langchain/pull/35851) ✅ |
+| **run-llama/llama_index** | ★ 48k | Patched a subtle data-corruption hazard in the LanceDB managed index — mutable default argument in `__init__` caused list state to bleed across unrelated instances | [#20998](https://github.com/run-llama/llama_index/pull/20998) ✅ |
+| **jeecgboot/JeecgBoot** | ★ 46k | Closed a file-descriptor leak in the Tika document parser — `InputStream` was allocated before the `try` block, leaving it open on any exception path; moved into try-with-resources | [#9548](https://github.com/jeecgboot/JeecgBoot/pull/9548) ✅ |
+| **jxxghp/MoviePilot** | ★ 10k | Fixed a worker thread that could hang forever — Alipan storage module made unbounded HTTP calls with no timeout, freezing the thread pool under slow or unreachable endpoints | [#5574](https://github.com/jxxghp/MoviePilot/pull/5574) ✅ |
+| **samuelclay/NewsBlur** | ★ 7.4k | Fixed a mutable default argument in the S3 `canonical_string()` signing utility — shared list state across calls risked silently corrupting AWS request signatures | [#2086](https://github.com/samuelclay/NewsBlur/pull/2086) ✅ |
+| **FasterXML/jackson-databind** | ★ 3.7k | Hardened JSON export against platform encoding drift — implicit charset in `export_to_json` produced garbled output on non-UTF-8 JVMs; made UTF-8 explicit | [#5829](https://github.com/FasterXML/jackson-databind/pull/5829) ✅ |
+| **networknt/light-4j** | ★ 3.6k | Sealed a `BufferedReader` leak in the logging handler — resource was opened outside try-with-resources so any exception on the read path left the descriptor open | [#2728](https://github.com/networknt/light-4j/pull/2728) ✅ |
+| **openrocket/openrocket** | ★ 2.6k | Fixed `BufferedWriter` leak in the RASAero flight-data exporter — stream was never closed on error exit paths, risking data truncation and fd exhaustion in long sessions | [#3092](https://github.com/openrocket/openrocket/pull/3092) ✅ |
+| **mll-lab-nu/RAGEN** | ★ 2.5k | Fixed mutable default in `load_config()` — shared list persisted across invocations, causing environment configs to accumulate entries silently across RL training runs | [#164](https://github.com/mll-lab-nu/RAGEN/pull/164) ✅ |
 
 *...and [more](https://github.com/tejasae-afk?tab=overview) across apache/james-project, deephaven/deephaven-core, awslabs/amazon-neptune-tools, and others.*
 
